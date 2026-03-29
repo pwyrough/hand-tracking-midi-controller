@@ -30,10 +30,10 @@ Mapping wrist position directly to MIDI CC values provides a workable real-time 
 
 ## Future Work
 
-Add configurable smoothing parameters
-Explore gesture-based triggers in addition to continuous control
-Compare wrist tracking vs fingertip or palm-center tracking
-Improve calibration across different users and camera setups
+- Add configurable smoothing parameters
+- Explore gesture-based triggers in addition to continuous control
+- Compare wrist tracking vs fingertip or palm-center tracking
+- Improve calibration across different users and camera setups
 
 ## Status
 
