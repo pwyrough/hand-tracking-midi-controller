@@ -21,8 +21,7 @@ Maps each hand to three MIDI CC channels
 
 ## Key Findings
 
-Raw hand tracking data is too unstable for expressive control without smoothing
-
+- Raw hand tracking data is too unstable for expressive control without smoothing
 - A short moving-average window improves usability while keeping latency manageable
 Mapping wrist position directly to MIDI CC values provides a workable real-time control system
 - The MediaPipe Tasks API requires local model loading and careful environment setup
