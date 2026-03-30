@@ -14,16 +14,16 @@ This project uses a webcam to track hand movement with MediaPipe and sends MIDI 
 ## How it Works
 Webcam → MediaPipe hand landmarks → wrist XYZ extraction → smoothing → MIDI CC output → DAW control
 
-Tracks up to two hands
-Uses wrist position (X, Y, Z) as control signals
-Applies moving-average smoothing to reduce jitter
-Maps each hand to three MIDI CC channels
+- Tracks up to two hands
+- Uses wrist position (X, Y, Z) as control signals
+- Applies moving-average smoothing to reduce jitter
+- Maps each hand to three MIDI CC channels
 
 ## Key Findings
 
 - Raw hand tracking data is too unstable for expressive control without smoothing
 - A short moving-average window improves usability while keeping latency manageable
-Mapping wrist position directly to MIDI CC values provides a workable real-time control system
+- Mapping wrist position directly to MIDI CC values provides a workable real-time control system
 - The MediaPipe Tasks API requires local model loading and careful environment setup
 - In downstream audio testing, stereo signals routed through a 3D object panner showed a perceived dip near the center position, while mono sources produced more consistent spatial behavior
 
